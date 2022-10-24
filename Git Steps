@@ -1,0 +1,83 @@
+Git init 
+How do we get .git where all history is stored by writing git init
+
+Write ls -a - This shows all hidden files
+
+Write ls.git and it will tell what is inside git
+
+Git status - What changes have been made in the projectthat are not currently saved in history of the project
+
+Now we want all the changes in the history
+
+Git add. - Everything in the current project directory that is currently not having its history or that is untracked(all red files) . Put all these files in staging area so that photo them is taken.
+
+Git commit -m “names.txt file added “. Please photographer. Click their picture.
+
+Git restore –staged names.txt to unstage
+
+Git log - to see entire history of the project. Where all the commits were made in the history.
+
+Git stash is a way to put all your work somewhere else without making commit without making history and when i want thing back i can get that
+
+To get changes back use git stash pop
+
+To clear the changes in the back type git stash clear
+
+
+Git remote add origin - to add url to your project
+
+
+Git remote -v will show all the urls that are attached to this folder
+
+Git push origin master -push the changes to url called origin and which branch you want to push. branch is called master.
+
+Git checkout feature - head is now pointing to feature branch.
+
+Git merge - if your work is completed then can you merge into main code. Now people can see your code.
+
+Git fork - to copy of this project do git fork
+
+To download the folder write git clone name of the url
+
+
+Pull request - create a project copy and  when you make change in the project copy how you make sure that your code changes is visible in the main project. You request it by pull request 
+Then people will review your code, suggest some changes and you make those changes and when your code is merged then your code is in the main branch
+
+Never do git push upstream your branch name because you dont have access to it
+
+For every new bug or new feature or new thing you are working on create a new pull request
+
+One pull request is for creating 1 branch
+
+Never commit on main branch  and not work on other branchotherwise all the commits would be made on main branch
+
+So for every new bug or new feature or new thing create a new branch and you can open a new pull request. We can only open a pull request on new branches only
+
+Steps for Making forked project even with main project
+
+Git fetch –all –prune to fetch all the changes. Prune means all deleted branches will also be fetched
+Git checkout main 
+Git reset –hard upstream/ main to reset the main branch of origin , the main branch of origin
+Git push origin main(main branch in my local system)
+ Git pull upstream main also does the same thing
+      
+      Merge conflict
+
+
+      Git branch temp - create another branch
+     Git checkout temp
+
+    Whenever you create a new branch your new branch is going to be created from head
+    So make sure your master branch is up to date before creating new branch
+
+   To merge all commits in one single commit use rebase commit
+
+   Git rebase -i write commit name
+ 
+i stands for interactive
+To squash a commit write s commit name
+To exit out of it write esc:x
+
+Git reset – hard will reset it with hard
+
+Merge conflicts
